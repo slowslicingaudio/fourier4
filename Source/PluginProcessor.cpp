@@ -156,7 +156,7 @@ void Fourier4AudioProcessor::processCorrect(float* bufferinput, float* bufferout
     }
 
     window.multiplyWithWindowingTable(segmentedL, fftsize);
-    fourierf.performRealOnlyForwardTransform(segmentedL, true);
+    fourierf.performRealOnlyForwardTransform(segmentedL);
     for (int i = 0; i < fftsize; i++) {
         std::complex<float> temp;
         temp.real(segmentedL[i * 2]);
@@ -169,9 +169,10 @@ void Fourier4AudioProcessor::processCorrect(float* bufferinput, float* bufferout
     
 
     //custom processing
+   
 
-
-
+    //std::reverse(magL, magL + (fftsize / 2));
+    //std::reverse(phaseL, phaseL + (fftsize / 2));
     //end processing
 
     // convert back to real imaginary

@@ -52,7 +52,7 @@ public:
     //==============================================================================
     void getStateInformation (juce::MemoryBlock& destData) override;
     void setStateInformation (const void* data, int sizeInBytes) override;
-    static constexpr int fftsize = 1024;
+    static constexpr int fftsize = 256;
     float leftbuf[fftsize * 2], rightbuf[fftsize * 2], leftbufout[fftsize * 2], rightbufout[fftsize * 2];
     int playheadL, playheadR, writeheadL = 0, writeheadR = 0;
     dsp::FFT fourierf, fourieri;
