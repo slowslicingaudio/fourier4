@@ -169,7 +169,6 @@ void Fourier4AudioProcessor::processCorrect(float* bufferinput, float* bufferout
     
 
     //custom processing
-   
 
     //std::reverse(magL, magL + (fftsize / 2));
     //std::reverse(phaseL, phaseL + (fftsize / 2));

@@ -55,7 +55,7 @@ public:
     void getStateInformation (juce::MemoryBlock& destData) override;
     void setStateInformation (const void* data, int sizeInBytes) override;
     static constexpr int fftsize = 256;
-    float leftbuf[fftsize], rightbuf[fftsize], leftbufout[fftsize], rightbufout[fftsize];
+    float leftbuf[fftsize], rightbuf[fftsize], leftbufout[fftsize], rightbufout[fftsize]; // circular buffers
     int playheadL, playheadR, writeheadL = 0, writeheadR = 0;
     dsp::FFT fourierf, fourieri;
     dsp::WindowingFunction<float> window;
