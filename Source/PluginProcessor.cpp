@@ -27,10 +27,10 @@ Fourier4AudioProcessor::Fourier4AudioProcessor()
 {
     playheadL = 0;
     playheadR = 0;
-    std::fill(leftbuf, leftbuf + (fftsize * 2), 0.0f);
-    std::fill(rightbuf, rightbuf + (fftsize * 2), 0.0f);
-    std::fill(leftbufout, leftbufout + (fftsize * 2), 0.0f);
-    std::fill(rightbufout, rightbufout + (fftsize * 2), 0.0f);
+    std::fill(leftbuf, leftbuf + (fftsize), 0.0f);
+    std::fill(rightbuf, rightbuf + (fftsize), 0.0f);
+    std::fill(leftbufout, leftbufout + (fftsize), 0.0f);
+    std::fill(rightbufout, rightbufout + (fftsize), 0.0f);
 }
 
 Fourier4AudioProcessor::~Fourier4AudioProcessor()
