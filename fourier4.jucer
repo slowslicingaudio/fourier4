@@ -13,8 +13,7 @@
       <FILE id="tQN2lK" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
     </GROUP>
   </MAINGROUP>
-  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"
-               JUCE_DSP_USE_STATIC_FFTW="1"/>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
   <EXPORTFORMATS>
     <VS2019 targetFolder="Builds/VisualStudio2019" extraLinkerFlags="C:\Users\16086\Desktop\fftwinstallation\fftw-3.3.10(1)\fftw-3.3.10\build\Release\fftw3f.lib">
       <CONFIGURATIONS>
